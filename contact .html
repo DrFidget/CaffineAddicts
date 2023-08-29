@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contact us,coffee get attached,coffee,coffeeshop,coffee place,coffee cafe,coffee place lahore,coffee bar,ccold coffee,coffee hot">
+    <title>Coffee Addicts Contact Us!</title> 
+    <link rel="stylesheet" href="./coffee/bootstrap.min.css">
+    <link rel="stylesheet" href="./coffee/contact.css"> 
+</head>
+<body>
+    <section id="navbarsec">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-2 " >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./logos/logo1.webp" alt=""  width="40" height="30">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./main.html">Home</a>
+                  <a class="nav-link" href="./menu.html">Menu</a>
+                <a class="nav-link" href="./shop.html">Store</a>
+                <a class="nav-link" href="./about.html">About US</a>
+                <a class="nav-link" href="./FAQs.html">FAQs</a>
+                  <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+       </section>
+    <div class="container">
+<form>
+    <h3> CONTACT US</h3>
+    <label class = "form_text">Name:</label>
+    <input type="text"id="name_id" placeholder="Your name" required>
+    <label class = "form_text">Phone No:</label>
+    <input type="text"id="phoneNo" placeholder="Phone no" required>
+    <label class = "form_text">Email:</label>
+    <input type="text"id="emaill" placeholder="Email Id" required>
+    <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+    <button onclick="user_name(),phone_no(),email()">send</button>
+</form>
+   </div>
+   
+
+   <script>
+       function user_name()
+        {
+            let x = document.getElementById('name_id').value;
+            pt = /^[a-zA-Z]+ [a-zA-Z]+$/;
+            if(x.search(pt) == -1)
+            {
+                alert("Invalid Name");
+            }
+            else
+            {
+                alert("Valid Name");
+            }
+        }
+            function phone_no()
+            {
+                let x=document.getElementById('phoneNo').value;
+                pt=/^([0-9]{4}-[0-9]{7})$/;
+                if(x.search(pt)==-1)
+                { 
+                    alert("Invalid PhoneNo");
+                }
+                else
+                {
+                  alert("Valid PhoneNo");
+                }
+            }
+        function email()
+        {
+            let x = document.getElementById('emaill').value;
+            pt = /^[a-z0-9]+@[a-z]+.[a-z]{2,3}$/;
+            if(x.search(pt) == -1)
+            {
+                alert("Invalid Email");
+            }
+            else
+            {
+                alert("Valid Email");
+            }
+        }
+   </script>
+   <script src="./coffee/bootstrap.bundle.min.js"></script>
+</body>
+</html>

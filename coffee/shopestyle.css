@@ -1,0 +1,186 @@
+@import "https://unpkg.com/open-props";
+
+:root{
+    --myfont1:1rem;
+    --myfont2:2rem;
+    --myfont3:3rem;
+    --myfont4:4rem;
+    --myfont5:5rem;
+    --myfont6:6rem;
+    --myfont7:7rem;
+    --myfonts:50px;
+    --myfontss:20px;
+}
+body{
+    background-image: url(https://r4.wallpaperflare.com/wallpaper/504/778/353/coffee-motivation-board-cup-wallpaper-88e63d98f0100c28901c716ed892c46a.jpg);
+    /* background-image:url(..//background/creambackground.webp); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+.container-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px;
+    padding-inline: 80px;
+    /* box-shadow: 2px 2px 4px black; */
+    grid-gap: 20px;
+}
+.container-grid>div{
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: var(--shadow-3);
+    max-height: 400px;
+    font-size: 1rem;
+    color: white;
+}
+.container-grid>div>div>button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.card-img-top{
+    width: 100%;
+    height: 230px;
+}
+.maincontainer{
+   
+    padding-top: 40px;
+}
+.price-item{
+    font-weight: bold;
+}
+h1,h2{
+
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px black;
+
+}
+.carttxt{
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.h2{
+
+    padding: 20px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px black;
+
+}
+.total-Ammount{
+    padding: 40pxs;
+    text-align: center;
+    font-size: var(--myfont3);
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.cart-items{
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.cart-row{
+    max-height: 450px;
+}
+.footercontainer{
+    background-image:var(--gradient-16);
+    display: flex;
+    flex-direction: row;
+    min-height: fit-content;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    font-size: 20px;
+}
+.footercontainer>div{
+    flex:45%;
+    height: fit-content;
+    padding: 60px;
+    margin: 30px;
+    min-height: fit-content;
+}
+
+.footercont1>img{
+        width: 20%;
+}
+
+.footercont2>a>p{
+    font-size: var(--myfont3);
+    padding: 5px;
+}
+button{
+    min-width: 20%;
+    max-width: fit-content;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 10px;
+}
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+
+  }
+.social_media
+{
+    width:30px;
+    height:30px;
+    margin:10px;
+}
+.social{
+    position: absolute;
+   margin-top:40px;
+
+}
+.social {
+   color:rgb(245, 245, 245);
+   font-size:30px;
+   padding:0px 10px;
+
+}
+
+@media (max-width: 800px) {
+    .footercontainer{
+      flex-direction: column;
+    }
+  }
+
+@media only screen and ( max-width : 1350px){
+    .container-grid{
+        /* display:grid; */
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+        padding-inline: 60px;
+        /* box-shadow: 2px 2px 4px black; */
+        grid-gap: 20px;
+    }
+}
+@media only screen and ( max-width : 1000px){
+    .container-grid{
+        /* display:grid; */
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+        padding-inline: 40px;
+        /* box-shadow: 2px 2px 4px black; */
+        justify-items: center;
+        grid-gap: 20px;
+    }
+}
+@media only screen and ( max-width : 640px){
+    .container-grid{
+        /* display:grid; */
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+        padding-inline: 30px;
+        /* box-shadow: 2px 2px 4px black; */
+        justify-items: center;
+        grid-gap: 20px;
+    }
+}

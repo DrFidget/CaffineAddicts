@@ -1,0 +1,498 @@
+@import "https://unpkg.com/open-props";
+
+:root{
+    --myfont1:1rem;
+    --myfont2:2rem;
+    --myfont3:3rem;
+    --myfont4:4rem;
+    --myfont5:5rem;
+    --myfont6:6rem;
+    --myfont7:7rem;
+    --myfonts:50px;
+    --myfontss:20px;
+    --boxwidth:350px;
+    --boxheight:500px;;
+    --boxgap:60px
+
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+
+}
+h1{
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: var(--myfont7);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+.main-menu{
+    margin-top: 50px;
+    background-image:var(--gradient-16) ;
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-gap: var(--boxgap);
+    grid-template-rows: .2fr auto;
+    justify-content: center;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "ec cc sh";
+    
+     
+}
+
+.menubox{
+ border-radius: 10px;
+ box-shadow: var(--shadow-4);   
+ 
+ color:white;
+ position: relative;
+ width: var(--boxwidth);
+ max-height: var(--boxheight);
+ overflow: hidden;
+}
+.heading{
+    grid-area: h1;
+    max-height: fit-content;
+}
+.typehotcoffee{
+    grid-area: ec;
+}
+.typecoldcoffee{
+    grid-area: cc;
+}
+.typeshakes
+{
+    grid-area: sh;
+}
+.title-menubox{
+    padding:10px;
+    width: var(--boxwidth);
+    max-height: 200px;
+    position: absolute;
+    bottom: 0;
+    background-color: #00000060;
+    visibility: hidden;
+}
+.title-menubox>p{
+    font-size: var(--myfont1);
+}
+.menubox:hover img{
+   transform: scale(1.1);
+}
+.menubox:hover .title-menubox{
+    visibility: visible;
+}
+.title-menubox>a{
+    color: white;
+}
+.title-menubox>a:hover{
+    color: grey;
+}
+
+
+
+.pricing-heading{
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: var(--myfont7);
+    color: inherit;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+.hotcoff-container,.shakes-container{
+    background: url(../background/creambackground.webp);
+}
+
+.prices-e{
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    padding: 40px;
+    padding-inline:80px;
+    grid-template-columns: 1fr;
+    
+
+}
+.prices-e>div{
+    border-radius: 10px;
+    background-color: #00000063;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow-3);
+}
+.pr-box{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr .5fr;
+    grid-template-areas: 
+    "img des pr";
+    grid-gap: 2px;
+
+}
+
+
+.img-ec-1{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/black.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-ec-2{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/expresso.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-ec-3{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/doppio.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-ec-4{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/Cappuicciono.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-ec-5{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/laate.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.description{
+    padding: 30px 0;
+
+}
+.description>p{
+    font-family: 'Courgette', cursive;
+    font-size: var(--myfont4);
+}
+.description-price{
+    /* max-width:30vw; */
+    border-radius: 10px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+.price{
+    font-size: var(--myfont2);
+    color: #D6AD60;
+    font-weight: bold;
+}
+.description-price:hover .price{
+    transform: scale(1.1);
+}
+
+
+
+.coldcoff-container{
+    background-image: var(--gradient-16);
+    color: white;
+}
+
+
+.img-cc-1{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/Iced\ Horchata\ Latte.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-cc-2{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/Creamy\ Iced.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-cc-3{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/Cappuccino\ Iced.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-cc-4{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/Caramel\ Cream\ Brew.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+/* .img-cc-5{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(./images/types/laate.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+} */
+
+.img-s-1{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/brew\ mocha\ smoothie.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-s-2{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/Chocolate\ chia\ coffee\ smoothie.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-s-3{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/Coffee\ and\ oat\ smoothie.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-s-4{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/coffee\ protein\ smoothie.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-s-5{
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+    background: url(../images/types/laate.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+.footercontainer{
+    background-image:var(--gradient-16);
+    display: flex;
+    flex-direction: row;
+    min-height: fit-content;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    font-size: 20px;
+}
+.footercontainer>div{
+    flex:45%;
+    height: fit-content;
+    padding: 60px;
+    margin: 30px;
+    min-height: fit-content;
+}
+
+.footercont1>img{
+        width: 20%;
+}
+
+.footercont2>a>p{
+    font-size: var(--myfont3);
+    padding: 5px;
+}
+button{
+    min-width: 20%;
+    max-width: fit-content;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 10px;
+}
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+
+  }
+.social_media
+{
+    width:30px;
+    height:30px;
+    margin:10px;
+}
+.social{
+    position: absolute;
+   margin-top:40px;
+
+}
+.social {
+   color:rgb(245, 245, 245);
+   font-size:30px;
+   padding:0px 10px;
+
+}
+a{
+    color: inherit;
+}
+a:link {
+    text-decoration: none;
+
+}
+a:hover{
+    color: lightgray;
+}
+@media (max-width: 800px) {
+    .footercontainer{
+      flex-direction: column;
+    }
+  }
+
+
+
+
+@media (max-width:1200px) {
+    :root{
+        --boxwidth:300px;
+        --boxheight:430px;
+        
+    }
+    
+}
+@media (max-width:1400px) {
+    :root{
+        --myfont1:1.3rem;
+        --myfont2:1.4rem;
+        --myfont3:2.4rem;
+        --myfont4:3.4rem;
+        --myfont5:4.4rem;
+        --myfont6:5.4rem;
+        --myfont7:6.4rem;
+        --myfonts:50px;
+        --myfontss:20px;
+    }
+}
+@media (max-width:1251px) {
+    :root{
+        --myfont1:.8rem;
+        --myfont2:1.5rem;
+        --myfont3:2.5rem;
+        --myfont4:3.5rem;
+        --myfont5:4.5rem;
+        --myfont6:5.5rem;
+        --myfont7:6.5rem;
+        --myfonts:50px;
+        --myfontss:20px;
+    }
+    
+}
+@media (max-width:1050px){
+    :root{
+        --boxgap:40px
+    }
+}
+@media (max-width:1001px) {
+    :root{
+        --myfont1:.5rem;
+        --myfont2:1rem;
+        --myfont3:1.5rem;
+        --myfont4:2.5rem;
+        --myfont5:3.5rem;
+        --myfont6:4.5rem;
+        --myfont7:5.5rem;
+        --myfonts:50px;
+        --myfontss:20px;
+        --boxwidth:250px;
+        --boxheight:357px;
+        --boxgap:37px
+    }
+    
+}
+@media  ( max-width : 850px){
+    
+    .main-menu{
+
+        justify-content: center;
+         grid-template-areas: 
+         "h1"
+         "ec"
+         "cc"
+         "sh";
+    }
+}
+@media (max-width:700px) {
+    .pr-box{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto 1fr 1fr;
+        grid-template-areas: 
+        "img"
+        "des"
+        "pr";
+        grid-gap: 2px;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    .img-ec-1,.img-ec-2,.img-ec-3,.img-ec-4,.img-ec-5 {
+        margin-inline: auto;
+    }
+    .img-cc-1,.img-cc-2,.img-cc-3,.img-cc-4,.img-cc-5 {
+        margin-inline: auto;
+    }
+    .img-s-1,.img-s-2,.img-s-3,.img-s-4,.img-s-5 {
+        margin-inline: auto;
+    }
+}
+@media (max-width:500px) {
+    :root{
+        --myfont1:.2rem;
+        --myfont2:.5rem;
+        --myfont3:.8rem;
+        --myfont4:1.8rem;
+        --myfont5:2.8rem;
+        --myfont6:3.8rem;
+        --myfont7:4.8rem;
+        --myfonts:50px;
+        --myfontss:20px;
+    }
+  
+}
+

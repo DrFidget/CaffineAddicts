@@ -1,0 +1,87 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+ }
+
+ body{
+    background-image: url(https://media.istockphoto.com/id/1412931676/photo/coffee-background-on-rustic-wooden-texture-flat-lay-copy-space.jpg?s=612x612&w=0&k=20&c=NJQhdOjgAFgpQUizOHk4TWTZRcTHQSN8nAvgpxmWVW8=);
+    /* background-image: url(../coffee-6634858_960_720\ \(1\).jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+ .container {
+    padding-top: 80px;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+.form_text
+{
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
+ form {
+    
+    background: rgb(148, 105, 66);
+     display: flex;
+     width: 90%;
+     max-width: 600px;
+     flex-direction: column;
+     padding: 2vw 4vw;
+     border-radius: 10px;
+ }
+
+ form h3 {
+     color: rgb(0, 0, 0);
+     font-weight: bold;
+     margin-bottom: 20px;
+ }
+
+ form input {
+     padding: 10px;
+     background: linen;
+     font-size: 16px;
+     border: 0;
+     margin: 10px 0;
+
+
+ }
+form ::placeholder
+{
+    color:black;
+}
+ form textarea {
+     border: 0;
+     margin: 10px 0;
+     padding: 10px;
+     background: linen;
+     font-size: 16px;
+
+ }
+
+ form button {
+
+
+     padding: 15px;
+     background: rgb(109, 54, 32);
+     color: white;
+     cursor: pointer;
+     width: 150px;
+     margin: 20px auto 0;
+     font-size: 16px;
+     border-radius: 20px;
+ }
+
+ form button:hover {
+     background: black;
+
+
+ }
+ 
